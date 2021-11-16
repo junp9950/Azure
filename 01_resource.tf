@@ -1,5 +1,5 @@
 # Create a resource group
-resource "azurerm_resource_group" "example" {
+resource "azurerm_resource_group" "jw_rg" {
   name     = "jeewoong"
-  location = "korea central"
+  location = "koreacentral"
 }
