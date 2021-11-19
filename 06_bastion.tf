@@ -7,7 +7,7 @@ resource "azurerm_subnet" "AzureBastionSubnet" {
 
 resource "azurerm_public_ip" "bastion_ip_jw" {
   name                = "bastion_ip"
-  location            = azurerm_resource_group.jw_rg.location
+  location            = azurerm_resource_group.jw_rg.location   
   resource_group_name = azurerm_resource_group.jw_rg.name
   allocation_method   = "Static"
   sku                 = "Standard"
