@@ -1,3 +1,4 @@
+#서브넷 만들기
 resource "azurerm_subnet" "elb_subnet" {
   name                 = "elb-subnet"
   resource_group_name  = azurerm_resource_group.jw_rg.name

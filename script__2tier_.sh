@@ -14,8 +14,8 @@ chown apache.apache /var/www/html/*
 sed -i 's/DirectoryIndex index.html/DirectoryIndex index.html index.php/g' /etc/httpd/conf/httpd.conf
 cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
 sed -i 's/database_name_here/wordpress/g' /var/www/html/wp-config.php
-sed -i 's/username_here/root/g' /var/www/html/wp-config.php
-sed -i 's/password_here/It12345!/g' /var/www/html/wp-config.php
-sed -i 's/localhost/20.196.217.94/g' /var/www/html/wp-config.php
+sed -i 's/username_here/rara@mysql-jwshin/g' /var/www/html/wp-config.php
+sed -i 's/password_here/tlswldnd123@/g' /var/www/html/wp-config.php
+sed -i 's/localhost/mysql-jwshin.mysql.database.azure.com/g' /var/www/html/wp-config.php
 systemctl start httpd
 systemctl enable httpd
