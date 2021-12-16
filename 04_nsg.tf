@@ -64,3 +64,10 @@ resource "azurerm_network_security_group" "jw_nsg_db" {
   location            = azurerm_resource_group.jw_rg.location
   resource_group_name = azurerm_resource_group.jw_rg.name
 }
+
+resource "azurerm_network_security_group" "jw_nsg_vmss" {
+  name = "nsg-vmss"
+  location            = azurerm_resource_group.jw_rg.location
+  resource_group_name = azurerm_resource_group.jw_rg.name
+  
+}
